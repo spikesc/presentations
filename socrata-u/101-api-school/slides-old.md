@@ -1,5 +1,5 @@
-# Universidad Socrata
-## Escuela API
+# Socrata University
+## API School
 
 ![Socrata U](../../img/socrata-u-logo.png)
 
@@ -9,13 +9,13 @@
 
 ===
 
-# ¿Quién rayos eres?
+# Who the heck are you?
 
 ![Socrata](/presentations/img/socrata-white.png)
 
 ---
 
-<h2>Fabricamos <span class="toy-store-blue">software</span> para hacer que los datos <span class="blushing-salmon">sean de mayor utilidad</span> para <span class="golden">mas personas</span>.</h2>
+<h2>We build <span class="toy-store-blue">software</span> to make data <span class="blushing-salmon">more useful</span> to <span class="golden">more people</span>.</h2>
 
 ---
 
@@ -30,44 +30,44 @@
 
 ===
 
-# ¿Y entonces qué es una API?
+# So what is an API anyway?
 
 ![APIs](../../img/Bubble_blue.tif.png)
 
 ---
 <div style="text-align: left; font-size: 3em; line-height: 1.1em">
-  <span class="blushing-salmon">A</span>plicaciones<br/>
-  <span class="fragment" data-fragment-index=0><span class="toy-store-blue">P</span>rogramación<br/></span>
-  <span class="fragment" data-fragment-index=1><span class="golden">I</span>nterfaz</span>
+  <span class="blushing-salmon">A</span>pplication<br/>
+  <span class="fragment" data-fragment-index=0><span class="toy-store-blue">P</span>rogramming<br/></span>
+  <span class="fragment" data-fragment-index=1><span class="golden">I</span>nterface</span>
 </div>
 
 ---
 
-# Lenguaje común
+# Common Language
 
-Una <span class="blushing-salmon">forma </span>consistente <span class="toy-store-blue">de comunicación </span> entre <span class="golden">dos sistemas de software</span>.
+A <span class="blushing-salmon">consistent</span> way for <span class="toy-store-blue">two software systems</span> to <span class="golden">communicate</span>.
 
 ---
 
-# Plataforma estable
+# Stable Platform
 
-Una <span class="blushing-salmon">garantía </span>de que <span class="toy-store-blue">el lenguaje </span>no <span class="golden">cambiará </span> sin previo aviso.
+A <span class="blushing-salmon">guarantee</span> that the <span class="toy-store-blue">language</span> will not <span class="golden">change</span> without notice.
     
 ---
 
-# Contrato
+# Contract
 
-Una API es un <span class="blushing-salmon">contrato </span>entre un <span class="toy-store-blue">proveedor </span>y un <span class="golden">consumidor.</span>
+An API is a <span class="blushing-salmon">contract</span> between a <span class="toy-store-blue">provider</span> and a <span class="golden">consumer</span>.
 
 ===
 
-# ¿Por qué son importantes las APIs?
+# Why are APIs important?
 
 ![APIs](../../img/Gear.png)
 
 ---
 
-## Los datos abiertos son un tanto desordenados
+## Open data is messy
 
 <pre>
 C00000042|ILLINOIS TOOL WORKS FOR BETTER GOVERNMENT COMMITTEE|Michael J. Lynch|3600 W. Lake Avenue||Glenview|IL|60025|U|Q||Q|C|ILLINOIS TOOL WORKS INC|
@@ -83,45 +83,45 @@ Courtesy of <a href="ftp://ftp.fec.gov">ftp.fec.gov</a>
     
 ---
     
-## Un conjunto de datos descargado es un conjunto de datos obsoleto
+## A downloaded dataset is a stale dataset
 
 ![Clock](../../img/Alarm_clock.tif.png)
 
 ---
 
-## Los desarrolladores no quieren administrar almacenes de datos personalizados
+## Developers don’t want to manage custom datastores
 
 ![Hockey Puck](../../img/Database.tif.png)
 
 ---
 
-## Usted quiere que las aplicaciones sean fácilmente portables
+## You want apps to be easily portable
 
 ![Rocket](../../img/Rocket.tif.png)
 
 ===
 
-# El Socrata Datos Abiertos APIs
+# The Socrata Open Data APIs
 
 ![SODA](../../img/can.png)
 
 ---
 
-## Puntos de Acceso de API
+## API Endpoints
 
-Formato:
+Format:
 
 <code>https://<span class="greenery">$domain</span>/resource/<span class="golden">$identifier</span>.<span class="blushing-salmon">$ext</span></code>
 
 ---
 
-### En el catálogo de datos
+### In the Data Catalog
 
 ![API Sidebar](img/sidebar.gif)
 
 ---
 
-## Filtros sencillos
+## Simple Filters
 
 <code>
 /resource/abcd-1234.json?<span class="toy-store-blue">source</span>=<span class="golden">ConEd</span>
@@ -142,29 +142,29 @@ Formato:
 
 ---
 
-## Consultas SoQL
+## SoQL Queries
 
 <code>
 /resource/abcd-1234.json?<br/>
 <span class="toy-store-blue">$where</span>=<span class="golden">kwh &gt; 80000</span>
 </code>
 
-<small style="padding-top: 5em">Para más información vea <a href="http://dev.socrata.com">dev.socrata.com</a></small>
+<small style="padding-top: 5em">For more details see <a href="http://dev.socrata.com">dev.socrata.com</a></small>
 
 ---
 
-## Consultas Geo
+## Geo Queries
 
 <code>
 /resource/abcd-1234.json?<br/>
 <span class="toy-store-blue">$where</span>=<span class="golden">within_circle(location, 47.61, -122.32, 500)</span>
 </code>
 
-<div class="footnote">Para más información: <a href="http://dev.socrata.com/docs/datatypes/location.html">dev.socrata.com/docs/datatypes/location.html</a></div>
+<div class="footnote">For more info: <a href="http://dev.socrata.com/docs/datatypes/location.html">dev.socrata.com/docs/datatypes/location.html</a></div>
 
 ---
 
-## Agregación de datos
+## Aggregating Data
 
 <code>
 /resource/abcd-1234.json?<br/>
@@ -184,7 +184,7 @@ Formato:
 
 ---
 
-## Paginación de datos
+## Paging Through Data
 
 <code contenteditable>
 /resource/abcd-1234.json?<br/>
@@ -194,60 +194,60 @@ Formato:
 
 ---
 
-## Aplicación de Tokens
+## Application Tokens
 
-1. Regístrese en [http://dev.socrata.com/register](http://dev.socrata.com/register)
-2. Incluir como:
+1. Register at [http://dev.socrata.com/register](http://dev.socrata.com/register)
+2. Include as:
 - <code><span class="toy-store-blue">X-App-Token</span>: <span class="golden">$token</span></code> HTTP Header or ... 
   - The <code><span class="toy-store-blue">$$app_token</span>=<span class="golden">$token</span></code> parameter
-3. Ganancia!!! (de más solicitudes de la API)
+3. Profit!!! (from more API requests)
 
 ---
 
-## Fusión de API
+## API Foundry
 
-La mejor forma para lograr que sus esfuerzos de despliegue de API sean exitosos de manera rápida y fácil es:
+The best way of making your API deployment effort successful rapidly and easily:
 
-* Crear una API personalizada y amigable
-* Documentación personalizada y muestras de código creadas automáticamente
-* Poderosas herramientas de gestión y regulación de API
+* Create a customized, friendly API
+* Custom documentation and code samples automatically created
+* Powerful API management and throttling tools
 
 [http://www.socrata.com/api-foundry/](http://www.socrata.com/api-foundry/)
 
 ---
 
-# ¡Demo de API para consumidores!
+# Consumer API Demo!
 
 ![Experiment](../../img/Pipette.tif.png)
 
 ===
 
-# Estrategias de publicación
+# Publishing Strategies
 
 ![Strategies](../../img/Notebook.tif.png)
 
 ---
 
-## ¿Importación inicial?
-## ¿Archivo de conjunto de datos?
-## ¿Cambios poco frecuentes?
+## Initial Import?
+## Archival Dataset?
+## Infrequent Changes?
 
-<span class="fragment" data-fragment-index=0>No hay necesidad de una integración de API. ¡Use las herramientas web!<span>
-
----
-
-## ¿Actualizaciones diarias o semanales?
-## ¿Reemplazo completo?
-## ¿Viene de un sistema ETL?
-
-<span class="fragment" data-fragment-index=0>Use DataSync o Safe FME<span>
+<span class="fragment" data-fragment-index=0>There's no need for an API integration. Use the web tools!<span>
 
 ---
 
-## ¿Actualizaciones en tiempo real?
-## ¿Datos que cambian con el tiempo?
+## Daily or Weekly Updates?
+## Complete replacement?
+## Comes from an ETL system?
 
-<span class="fragment" data-fragment-index=0>Use la API RESTful<span>
+<span class="fragment" data-fragment-index=0>Use DataSync or Safe FME<span>
+
+---
+
+## Real-time updates?
+## Data that morphs over time?
+
+<span class="fragment" data-fragment-index=0>Use the RESTful API<span>
 
 ===
 
@@ -263,23 +263,23 @@ La mejor forma para lograr que sus esfuerzos de despliegue de API sean exitosos 
 
 ===
 
-# Las APIs de publicación Socrata
+# The Socrata Publisher APIs
 
 ![Gear!](../../img/Gear.png)
 
 ---
 
-## Descripción
+## Overview
 
-Sigue los mismos paradigmas que las APIs de consumidor:
+Follows the same paradigms as the consumer APIs:
 
-* Mismo punto de acceso RESTful que el conjunto de datos
-* Soporta JSON, XML, CSV, etc.
-* Interfaces de actualización por lotes y metadatos disponibles también
+* Same `REST`ful endpoint as the dataset
+* Supports `JSON`, `XML`, `CSV`, etc.
+* Bulk and metadata update interfaces also available
 
 ---
 
-## Ejemplo: Agregar un nuevo informe de incendio 911
+## Example: Adding a new fire 911 report
 
 <pre><code contenteditable>
 POST https://data.seattle.gov/resource/kzjm-xkqj.json
@@ -304,38 +304,38 @@ X-App-Token: CGxaHQoQlgQSev4zyUh5aR5J3
 
 ---
 
-## Bibliotecas de publicación del cliente
+## Publisher Client Libraries
 
-Bibliotecas o ejemplos disponibles para:
+Libraries or examples available for:
 
 * [Java](https://github.com/socrata/soda-java)
 * [Scala](https://github.com/socrata/soda-scala)
 * [Ruby](https://github.com/socrata/soda-ruby)
-* Más próximamente...
+* More coming soon...
 
 [http://github.com/socrata](http://github.com/socrata)
 
 ===
 
-# ¡Ayuda!
+# Help!
 
 ![Questions](../../img/Question.tif.png)
 
 ---
 
-## Portal de desarrollador
+## Developer Portal
 
 ![Developer Portal](../../img/Info.tif.png)
 
 [http://dev.socrata.com](http://dev.socrata.com)
 
-¡Problemas de archivos y solicitudes de retiro!
+File issues and pull requests!
 
 <http://github.com/socrata/dev.socrata.com>
 
 ---
 
-## Soporte
+## Get Support
 
 ![Get Support](../../img/Question.tif.png)
 
@@ -345,7 +345,7 @@ Bibliotecas o ejemplos disponibles para:
 
 ---
 
-## Contacto
+## Contact Me
 
 <span class="giant">
 [chris.metcalf@socrata.com](mailto:chris.metcalf@socrata.com)
@@ -363,12 +363,12 @@ Bibliotecas o ejemplos disponibles para:
 
 ===
 
-# ¿Preguntas?
+# Questions?
 
 ![Questions?](../../img/Question.tif.png)
 
 ===
 
-# ¡Gracias!
+# Thanks!
 
 ![Grat-zee!](img/grat-zee.gif)
